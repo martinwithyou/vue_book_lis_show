@@ -19,7 +19,7 @@
 	<br/>
 	<br/>
 	<button class="sub" @click="sub">submit</button>
-	
+	<button class="sub" @click="axios">axios</button>
 	
 	<div class="outter" v-show="bg">
 		<div class="inner">
@@ -50,8 +50,21 @@
 	    close_this_show(){
 	    	this.bg=false;
 	    },
+	    axios(){
+	    	var obj={};
+		 	obj.price=this.price;
+		 	obj.info=this.info;
+		 	obj.name=this.name;
+		 	
+	    	axios.post("http://192.168.65.1:3000/works",obj).then((res)=>{
+              console.log(res.data);
+              this.datas=res.data;
+            },error=>{
+              console.log(error);
+            })
+	    	
+	    },
 		sub(){
-			
 		 	var obj={};
 		 	obj.price=this.price;
 		 	obj.info=this.info;
@@ -128,11 +141,11 @@
 	.add{
 	width:100%;
 	height:600px;
-	background-color:deeppink;
-	color:#ffffff;
+	color:#666666;
 	}
 .home_head{
 	background:#1C88D3;
+	color:#ffffff;
 	text-align:center;
 	line-height: 80px;
 	font-weight: 700;
@@ -143,11 +156,12 @@
 input{
 	width:80%;
 	height:50px;
-	border:0px solid #333333;
+	border:1px solid #f2f2f2;
 	border-radius: 5px;
 	float:right;
 	margin-right:20px;
 	margin-top:20px;
+	box-shadow: 0px 0px 5px #737373;
 }
 label{
 	display:inline-block;

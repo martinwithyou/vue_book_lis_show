@@ -1,6 +1,6 @@
 <template>
 	<div calss='btn'>
-	    列表
+	    图书介绍
 	</div>
 </template>
 

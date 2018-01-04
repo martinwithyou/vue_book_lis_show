@@ -4,7 +4,9 @@
 	<div class="chose_bar">
 	<router-view></router-view>
 	<router-link to="/home">
-		<div class="btn_page">首页</div>
+		<div class="btn_page">
+			首页
+		</div>
 	</router-link>
 	<router-link to="/list">
 		<div class="btn_page_center">列表</div>
@@ -81,8 +83,6 @@ export  default{
 		box-shadow: 0px 0px 8px #d9d9d9;
 	}
 	.chose_bar{
-		/*position: absolute;
-		bottom:0;*/
 		width:99%;
 		height:665px;
 		background-color:#ffffff;

@@ -1,6 +1,6 @@
 <template>
 	<div calss='btn'>
-	     首页
+	    书城首页
 	</div>
 </template>
 
@@ -26,6 +26,7 @@
 	.btn{
 		width:100%;
 		height:100px;
+		color:#ffffff !important;
 		
 	}
 </style>

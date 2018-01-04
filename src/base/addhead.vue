@@ -1,6 +1,6 @@
 <template>
 	<div calss='btn'>
-	  增加
+	  增加图书
 	</div>
 </template>
 

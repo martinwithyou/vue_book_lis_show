@@ -8,10 +8,12 @@
 
 	<!--<button @click="getData" class="data">get data</button>-->
 	<li v-for="data in datas">
+		<img src="../img/ww.jpg">
 		<h3>
-			<span class="title">{{data.name}}</span>
+			<span class="title">作者：{{data.name}}</span>
 			<span>----{{data.bio}}</span>
 		    <span>----{{data.slogan}}</span>
+		    <hr/>
 		</h3>
 	</li>
 	</div>
@@ -46,6 +48,13 @@ import heads from '../base/head'
 </script>
 
 <style scoped>
+img{
+	margin-bottom:20px;
+}
+hr{
+	margin-top:20px;
+	margin-bottom:20px;
+}
 .title{
 	background-color: #1C88D3;
 	display:inline-block;
@@ -53,6 +62,7 @@ import heads from '../base/head'
 	margin-left:10px;
 	padding-left:5px;
 	padding-right:5px;
+	color:#ffffff;
 }
 .data{
 	width:200px;
@@ -62,8 +72,8 @@ import heads from '../base/head'
 .home{
 	width:100%;
 	height:600px;
-	background-color:darkorange;
-	color:#ffffff;
+	background-color:#ffffff;
+	color:#666666;
 	overflow: auto;
 }
 .home_head{
@@ -74,6 +84,7 @@ import heads from '../base/head'
 	font-size:25px;
 	height:80px;
 	width:100%;
+	color:#ffffff;
 }
 
 </style>
