@@ -7,15 +7,15 @@
 	<br/>
 	<br/>
 	<label>name</label>
-	<input v-model="name" class="input"/>
+	<input v-model="name" class="input"  placeholder="please input your book name" />
 	<br/>
 	<br/>
 	<label>price</label>
-	<input v-model="price" class="input"/>
+	<input v-model="price" class="input"  placeholder="please input your price" />
 	<br/>
 	<br/>
 	<label>info</label>
-	<input v-model="info" class="input"/>
+	<input v-model="info" class="input"  placeholder="please input your information about your book" />
 	<br/>
 	<br/>
 	<button class="sub" @click="sub">submit</button>
@@ -24,7 +24,10 @@
 	<div class="outter" v-show="bg">
 		<div class="inner">
 			<span  class="close_icon" @click="close_this_show">x</span>
-			<span class="tip_icon">恭喜你，提交成功</span>
+			<span class="tip_icon">
+				<img class="success_tip" src="../img/com.png">
+				恭喜你，提交成功
+			</span>
 		</div>
 	</div>
 	
@@ -93,6 +96,11 @@
 </script>
 
 <style>
+	.success_tip{
+		width:25px;
+		height:25px;
+		margin-top:8px;
+	}
 	.tip_icon{
 		display: inline-block;
 		margin-top:80px;
@@ -137,11 +145,13 @@
 		border-radius:10px;
 		font-size:20px;
 		font-weight: 700;
+		margin-bottom:20px;
 	}
 	.add{
 	width:100%;
 	height:600px;
 	color:#666666;
+
 	}
 .home_head{
 	background:#1C88D3;
@@ -162,6 +172,7 @@ input{
 	margin-right:20px;
 	margin-top:20px;
 	box-shadow: 0px 0px 5px #737373;
+/*	padding-left:5px;*/
 }
 label{
 	display:inline-block;

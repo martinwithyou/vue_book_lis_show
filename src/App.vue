@@ -61,6 +61,7 @@ export  default{
 		float:left;
 		border-bottom:1px solid #d9d9d9;
 		color:#666666;
+		border-top:1px solid #d9d9d9;
 	}
 	.btn_page_center{
 		position:relative;
@@ -75,6 +76,7 @@ export  default{
 		border-left:1px solid #d9d9d9;
 		border-right:1px solid #d9d9d9;
 		color:#666666;
+		border-top:1px solid #d9d9d9;
 	}
 	.btn_page_center:hover{
 		box-shadow: 0px 0px 8px #d9d9d9;
@@ -87,6 +89,7 @@ export  default{
 		height:665px;
 		background-color:#ffffff;
 		font-weight:700;
+
 	}
 	.header{
 		width:100%;
